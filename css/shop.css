@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Sans-Serif;
+    font-weight: 900;
+}
+
+body {
+    background: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 100px;
+    z-index: 10000;
+    background-color: #000;
+}
+
+header #logo {
+    height: 100px;
+    width: 100px;
+}
+
+.person {
+    color: #fff;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a,
+header ul a i .person {
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6;
+}
+
+header.sticky {
+    padding: 1px 100px;
+    background: #fff;
+}
+
+header.sticky .logo,
+header.sticky ul li a,
+header.sticky a {
+    color: #000;
+}
+
+.nav {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.nav a {
+    padding: .5em .8em;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3E8914;
+    border-right: 3px solid #2E640F;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.nav a:hover {
+    color: #3DA35D;
+}
+
+.image1 img {
+    height: auto;
+    width: 1800px;
+    display: flex;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.first_p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about_head h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 8%;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.about_head p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1%;
+    color: red;
+}
+
+
+
+.about {
+    margin-bottom: 1%;
+    display: flex;
+    float: left;
+    margin-left: 7%;
+}
+
+.about p {
+    width: 50%;
+    margin-right: 0;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.about img {
+    height: 300px;
+    width: 500px;
+}
+
+.about_last p {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 5%;
+    background-color: black;
+    height: auto;
+    padding-top: 1%;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 3%;
+}
+
+.footer1 form {
+    margin-top: 10%;
+}
+
+.footer1 form {
+
+    max-width: 400px;
+    /* Set the maximum width of the form */
+    margin: 0 auto;
+    /* Center the form horizontally */
+}
+
+.footer1 input[type="text"] {
+    margin-top: 8%;
+    width: 100%;
+    /* Make the input take up the full width of its container */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+    padding: 10px;
+    /* Add padding for better visual appearance */
+
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.footer_nav {
+    color: white;
+    text-align: center;
+    margin-bottom: 1%;
+
+}
+
+.footer_nav a {
+    margin-right: 1%;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500px;
+    font-family: Helvetica, Sans-Serif;
+
+}
+
+.footer img {
+    height: auto;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.footer p {
+    color: red;
+}
+
+.footer-more {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+.footer1 {
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+
+
+.footer2 {
+    width: 25%;
+    margin-left: 50%;
+    text-align: center;
+    float: right;
+}
+
+.footer2 ul li a {
+    margin-right: 5%;
+    margin-top: 10%;
+    text-decoration: none;
+}
+
+.footer2 ul {
+    display: flex;
+    position: absolute;
+
+    margin-top: 0%;
+    margin-left: 2%;
+}
+
+.footer2 ul li {
+    list-style: none;
+    margin-top: 5%;
+}
+
+.footer2 ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+}
+
+.footer2 ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+.footer2 ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.footer2 ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+.footer2 ul li a:hover:before {
+    top: 0;
+}
+
+.footer2 ul li:nth-child(1) a:before {
+    background: #3b5999;
+}
+
+.footer2 ul li:nth-child(2) a:before {
+    background: #55acee;
+}
+
+.footer2 ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+.footer2 ul li:nth-child(4) a:before {
+    background: #dd4b39;
+}
+
+s .tag {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 25%;
+    /* Set the width of each image to 25% to fit four images in one line */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
